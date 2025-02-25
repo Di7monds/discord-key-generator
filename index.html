@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Discord Key Generator</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      padding: 40px;
+      background: #f7f7f7;
+    }
+    h1 {
+      color: #333;
+    }
+    #key {
+      font-size: 2em;
+      color: #007bff;
+      margin-top: 20px;
+      background: #fff;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+  <h1>Your Discord Key:</h1>
+  <p id="key"></p>
+
+  <script>
+    // Array of five keys that all start with "GK-"
+    const keys = [
+      "GK-A1B2C3D4",
+      "GK-E5F6G7H8",
+      "GK-I9J0K1L2",
+      "GK-M3N4O5P6",
+      "GK-Q7R8S9T0"
+    ];
+    // Randomly select one key from the array
+    const randomKey = keys[Math.floor(Math.random() * keys.length)];
+    // Display the key on the page
+    document.getElementById("key").textContent = randomKey;
+  </script>
+</body>
+</html>
