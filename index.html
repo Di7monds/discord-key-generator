@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Discord Key Generator</title>
   <style>
     body {
@@ -23,6 +23,7 @@
       border-radius: 8px;
       box-shadow: 0 0 5px rgba(0,0,0,0.1);
       display: inline-block;
+      word-break: break-all;
     }
   </style>
 </head>
@@ -31,18 +32,30 @@
   <p id="key"></p>
 
   <script>
-    // Updated array of keys including the reward key
     const keys = [
-      "GK-L3X8D2P9",  // new key 1
-      "GK-V7K2Q5N3",  // new key 2
-      "GK-S1B4T9F6",  // new key 3
-      "GK-W4M3R8L2",  // new key 4
-      "GK-H9G7C5T1",  // new key 5
-      "GK-Z7D8S2T5"   // reward key
+      "GK-A1B2C3", "GK-D4E5F6", "GK-G7H8I9", "GK-J1K2L3", "GK-M4N5O6",
+      "GK-P7Q8R9", "GK-S1T2U3", "GK-V4W5X6", "GK-Y7Z8A9", "GK-B1C2D3",
+      "GK-E4F5G6", "GK-H7I8J9", "GK-K1L2M3", "GK-N4O5P6", "GK-Q7R8S9",
+      "GK-T1U2V3", "GK-W4X5Y6", "GK-Z7A8B9", "GK-C1D2E3", "GK-F4G5H6",
+      "GK-I7J8K9", "GK-L1M2N3", "GK-O4P5Q6", "GK-R7S8T9", "GK-U1V2W3",
+      "GK-X4Y5Z6", "GK-A7B8C9", "GK-D1E2F3", "GK-G4H5I6", "GK-J7K8L9",
+      "GK-M1N2O3", "GK-P4Q5R6", "GK-S7T8U9", "GK-V1W2X3", "GK-Y4Z5A6",
+      "GK-B7C8D9", "GK-E1F2G3", "GK-H4I5J6", "GK-K7L8M9", "GK-N1O2P3",
+      "GK-Q4R5S6", "GK-T7U8V9", "GK-W1X2Y3", "GK-Z4A5B6", "GK-C7D8E9",
+      "GK-F1G2H3", "GK-I4J5K6", "GK-L7M8N9", "GK-O1P2Q3", "GK-R4S5T6",
+      "GK-U7V8W9", "GK-X1Y2Z3", "GK-A4B5C6", "GK-D7E8F9", "GK-G1H2I3",
+      "GK-J4K5L6", "GK-M7N8O9", "GK-P1Q2R3", "GK-S4T5U6", "GK-V7W8X9",
+      "GK-Y1Z2A3", "GK-B4C5D6", "GK-E7F8G9", "GK-H1I2J3", "GK-K4L5M6",
+      "GK-N7O8P9", "GK-Q1R2S3", "GK-T4U5V6", "GK-W7X8Y9", "GK-Z1A2B3",
+      "GK-C4D5E6", "GK-F7G8H9", "GK-I1J2K3", "GK-L4M5N6", "GK-O7P8Q9",
+      "GK-R1S2T3", "GK-U4V5W6", "GK-X7Y8Z9", "GK-A1B2C4", "GK-D5E6F7",
+      "GK-G8H9I1", "GK-J2K3L4", "GK-M5N6O7", "GK-P8Q9R1", "GK-S2T3U4",
+      "GK-V5W6X7", "GK-Y8Z9A1", "GK-B2C3D4", "GK-E5F6G7", "GK-H8I9J1",
+      "GK-L3X8D2P9", "GK-V7K2Q5N3", "GK-S1B4T9F6", "GK-W4M3R8L2", "GK-H9G7C5T1",
+      "GK-Z7D8S2T5" // your reward key kept unchanged
     ];
-    // Randomly select one key from the array
+
     const randomKey = keys[Math.floor(Math.random() * keys.length)];
-    // Display the key on the page
     document.getElementById("key").textContent = randomKey;
   </script>
 </body>
